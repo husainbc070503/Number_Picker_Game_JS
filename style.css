@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunshiney&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sunshiney', cursive;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.top {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url('https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtZXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.top>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.top .title {
+    font-size: 5.5vw;
+    color: #EFF5F5;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    text-shadow: 0 0 8px #fff;
+}
+
+.top .text {
+    display: block;
+    width: 100%;
+    font-size: 2vw;
+    color: #c9d8d7;
+    letter-spacing: 1.2px;
+    word-spacing: 1rem;
+    line-height: 2rem;
+}
+
+.top button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background: #628397;
+    color: #EFF5F5;
+    padding: 10px 28px;
+    border-radius: 8px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1.7vw;
+    transition: all ease-out 0.4s;
+}
+
+.top button:hover {
+    background: #EFF5F5;
+    color: #628397;
+}
+
+.line {
+    width: 8px;
+    height: 100vh;
+    background: #d9dde1;
+}
+
+.bottom {
+    width: 50%;
+    height: 100vh;
+}
+
+.bottom .left {
+    width: 100%;
+    height: 50vh;
+    background: #434f5a;
+}
+
+.left .left-title {
+    font-size: 3vw;
+    line-height: 2rem;
+    padding-top: 30px;
+    color: #06283D;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0 0 7px #fff;
+}
+
+.left .inputField {
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 100px auto 0;
+}
+
+.left input {
+    display: block;
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 17px 20px;
+    box-shadow: inset 0 0 10px #102030, 0 0 112px #EFF5F5;
+    text-align: center;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    font-size: 1.2vw;
+}
+
+.left button {
+    width: 120px;
+    padding: 8px 30px;
+    border-radius: 30px;
+    background: #204060;
+    color: #9CFF2E;
+    font-size: 1.2vw;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.right {
+    width: 100%;
+    height: 50vh;
+    background: #E8F9FD;
+    position: relative;
+}
+
+.right .reply {
+    font-size: 2.6vw;
+    padding-top: 40px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+.right .scores {
+    width: 360px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.scores>p {
+    font-size: 2.2vw;
+    color: #2C3333;
+    margin: 10px;
+    letter-spacing: 4px;
+}
+
+.scores p:last-child {
+    font-size: 1.5vw;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:860px) {
+    .container {
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .top,
+    .bottom {
+        width: 100%;
+    }
+
+    .top {
+        max-height: 400px;
+    }
+
+    .top .title {
+        font-size: 10vw;
+    }
+
+    .top .text {
+        font-size: 5vw;
+        word-spacing: 0.4rem;
+        letter-spacing: 1px;
+    }
+
+    .top button {
+        font-size: 4.5vw;
+        padding: 10px 36px;
+        border-radius: 40px;
+    }
+
+    .line {
+        width: 100%;
+        height: 2px;
+    }
+
+    .left,
+    .right {
+        max-height: 250px;
+    }
+
+    .left .left-title {
+        font-size: 6vw;
+    }
+
+    .left .inputField {
+        margin: 40px auto 0;
+    }
+
+    .inputField input {
+        width: 100%;
+        font-size: 2.8vw;
+    }
+
+    .inputField button {
+        font-size: 4.2vw;
+        margin-top: 28px;
+        letter-spacing: 2px;
+    }
+
+    .right .reply {
+        font-size: 6vw;
+    }
+
+    .scores>p {
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .scores p:last-child {
+        font-size: 2.8vw;
+        text-align: start;
+        margin-top: 20px;
+    }
+}

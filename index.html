@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Picker Game Using JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="top">
+            <div>
+                <h2 class="title">Welcome!</h2>
+                <p class="text">Try how much are you lucky..😀</p>
+            </div>
+            <button type="button" id="again-btn">Again</button>
+        </div>
+        <div class="line"></div>
+        <div class="bottom">
+            <section class="left">
+                <h1 class="left-title">Guess the number!!🤔</h1>
+                <div class="inputField">
+                    <input type="text" id="input" autofocus>
+                    <button type="button" id="check-btn">Check</button>
+                </div>
+            </section>
+            <section class="right" id="right">
+                <div class="reply" id="reply">Start Guessing..😀</div>
+                <div class="scores">
+                    <p class="score">💯 Score: <span id="score">0</span></p>
+                    <p class="highest-score">🎖️ Highest Score: <span id="high-score">0</span></p>
+                    <p class="attempts-left">Attempts Left: <span id="attempts-left">10</span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
